@@ -7,14 +7,13 @@ Basically like that, but the route object is passed into a constructor.
     var router = new PageRouter({
 
         common: function(){
-            log('common fired!');
-            changeActiveLink();
+            console.log('common fired!');
         },
         'page-home': function(){
-            log('page home!');
+            console.log('page home!');
         },
         'page-faqs': function(){
-            log('page-faqs!');
+            console.log('page faq!');
         }
 
     });
@@ -22,3 +21,11 @@ Basically like that, but the route object is passed into a constructor.
 
     // kick it all off here
     $(router.init);
+    
+       <body id="page-index"> 
+       => console.log('common fired!');
+       => console.log('page home!');
+      
+      <body id="page-faq">   
+      => console.log('common fired!');
+      => console.log('page faq!');
