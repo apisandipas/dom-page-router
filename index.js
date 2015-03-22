@@ -1,0 +1,1 @@
+var PageRouter = require('./lib/pageRouter');
